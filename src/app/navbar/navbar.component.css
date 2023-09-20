@@ -1,0 +1,20 @@
+
+
+.navbar-brand{
+    width: 310px;
+    height: 58px;
+    /* padding-left: 6px; */
+    display: block;
+    position: relative;
+    margin-left:1px;
+}
+.span{
+    margin-left: 26px;
+    margin-top: 7px;
+}
+.navbar{
+    height: 58px;
+    background-color: rgb(60, 175, 122);
+    /* position: relative; */
+    /* position: fixed; */
+}
