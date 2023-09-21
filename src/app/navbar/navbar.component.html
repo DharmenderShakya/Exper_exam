@@ -10,13 +10,13 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
             <!-- <span><i class="fa-solid fa-user" style="color: #4d588f;"></i></span> -->
-            <a class="nav-link dropdown-toggle text-dark" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span><i class="fa-solid fa-user" style="color: #4d588f;"></i></span>
-              <span class="glyphicon glyphicon-user">user</span>
+            <a class="nav-link text-dark" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><i class="fa-solid fa-user" style="color: #060606e1;"></i></span>
+              <!-- <span class="glyphicon glyphicon-user">user</span> -->
             </a>
-            <ul class="dropdown-menu" aria-labelledby="userDropdown">
-              <li><a class="dropdown-item" routerLink="/login"><span></span> Login</a></li>
-              <li><a class="dropdown-item" routerLink="/register"><span></span>New Registration</a></li>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item"><span></span> login</a></li>
+              <li><a class="dropdown-item" href="#" (click)="logOut()"><span></span>logout</a></li>
             </ul>
           </li>
         </ul>

@@ -17,6 +17,7 @@ import { InstructionComponent } from './instruction/instruction.component';
 import { StartComponent } from './start/start.component';
 import { AuthGuard } from './user-guard.guard';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AdminAuth } from './admin-gaurd.guard';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent },
@@ -28,7 +29,7 @@ const routes: Routes = [
     path:'register',component:RegisterComponent,pathMatch:'full'
   },
   {
-    path:'admin',component:AdminDeshboardComponent,children:[
+    path:'admin',component:AdminDeshboardComponent,canActivate:[AdminAuth],children:[
       {
         path:'home',component:HomeComponent
       },
@@ -64,6 +65,7 @@ const routes: Routes = [
   {
     path:'user',
     component:UserDeshboardComponent,
+    canActivate:[AuthGuard], 
     children:[
       {
         path:'cat',component:LoadQuizzeComponent

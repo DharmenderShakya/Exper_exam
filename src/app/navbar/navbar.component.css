@@ -18,3 +18,17 @@
     /* position: relative; */
     /* position: fixed; */
 }
+.ms-auto{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-color: rgb(155, 157, 158);
+    border-radius: 50%;  
+}
+#userDropdown{
+    margin-top: -6px;
+}
+.dropdown-menu{
+    width: 75px;
+    margin-left: -110px;
+}

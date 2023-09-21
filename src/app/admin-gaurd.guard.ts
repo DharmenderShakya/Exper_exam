@@ -20,7 +20,7 @@ export class AdminGaurdGuard{
   }
   
 }
-export const AuthGuard:CanActivateFn=(next: ActivatedRouteSnapshot,state: RouterStateSnapshot):boolean=>{
+export const AdminAuth:CanActivateFn=(next: ActivatedRouteSnapshot,state: RouterStateSnapshot):boolean=>{
   return inject(AdminGaurdGuard).canActivate(next,state);
 }
 
