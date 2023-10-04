@@ -26,14 +26,6 @@ ngOnInit(): void {
 
     })
   }
-
-  // getToken(){
-  //   this.loginService.generateToken(this.loginData).subscribe((data:any)=>{
-  //     console.log("this is a token"+data.token);
-  //   })
-  // }
-  
-
   formSubmit() {
     console.log("this my name" + this.loginData.userName);
     if (this.loginData.userName.trim() == '' ||
